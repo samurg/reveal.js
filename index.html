@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>C#</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/solarized.css">
@@ -24,39 +24,63 @@
 	<body>
 		<div class="reveal" >
 			<div class="slides">
-				<section id="fragments" data-transition="zoom">
-					<h1>Titulo</h1>
-					<p class="fragment"></p>
+				<section>
+					<h1>C# Language</h1>
+					<p><small>C# syntax is highly expressive, yet it is also simple and easy to learn. The curly-brace syntax of C# will be instantly recognizable to anyone familiar with C, C++ or Java. Developers who know any of these languages are typically able to begin to work productively in C# within a very short time. C# syntax simplifies many of the complexities of C++ and provides powerful features such as nullable value types, enumerations, delegates, lambda expressions and direct memory access, which are not found in Java. C# supports generic methods and types, which provide increased type safety and performance, and iterators, which enable implementers of collection classes to define custom iteration behaviors that are simple to use by client code. Language-Integrated Query (LINQ) expressions make the strongly-typed query a first-class language construct.
+					</small></p>
 				</section>
-				<section data-markdown data-transition="zoom">
-					<!--Secction for code-->
-					```
-					<!--code-->
 
-					```
+				<section data-transition="zoom">
+					<h1>Hello World -- Your First Program (C# Programming Guide)<h1>
 				</section>
+				<section id="fragments" data-transition="zoom">
+					<h2>To create and run a console application...</h2>
+					<h3 class="fragment">1. Start Visual Studio.</h3>
+					<h3 class="fragment">2. On the menu bar, choose <strong>File, New, Project.</strong></h3>
+					<p class="fragment">The <strong>New Project</strong> dialog box opens.</p>
+					<h3 class="fragment">3. Expand <strong>Installed</strong>, expand <strong>Templates</strong>, expand <strong>Visual C#</strong>, and then choose <strong>Console Application.</strong></h3>
+					<h3 class="fragment">4. In the <strong>Name</strong> box, specify a name for your project, and then choose the <strong>OK</strong> button.</h3>
+					<p class="fragment">The new project appears in <strong>Solution Explorer.</strong></p>
+					<h3 class="fragment">5. If Program.cs isn't open in the <strong>Code Editor</strong>, open the shortcut menu for <strong>Program.cs</strong> in <strong>Solution Explorer</strong>, and then choose <strong>View Code.</strong></h3>
+				</section>
+				
 				<section data-background-video="#" data-background-color="#000" data-transition="zoom">
 
 				</section>
 				<section>
-					<h2>Result Hello Wold! Pretty Code</h2>
+					<p>Dentro de Main() inserta el codigo:</p>
 					<pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+						static void Main() 
+						{
+						        Console.WriteLine("Hello World!");
 
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
+						        // Keep the console window open in debug mode.
+						        Console.WriteLine("Press any key to exit.");
+					            Console.ReadKey();
+					    }
+					
 					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+				</section>
+				<section>
+					<h1>Result Hello Wold!</h1>
+					<pre><code class="hljs" data-trim contenteditable>
+						// A Hello World! program in C#.
+						using System;
+						namespace HelloWorld
+						{
+						    class Hello 
+						    {
+						        static void Main() 
+						        {
+						            Console.WriteLine("Hello World!");
+
+						            // Keep the console window open in debug mode.
+						            Console.WriteLine("Press any key to exit.");
+						            Console.ReadKey();
+						        }
+						    }
+						}
+					</code></pre>
 				</section>
 			</div>
 		</div>
